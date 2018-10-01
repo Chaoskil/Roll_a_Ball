@@ -312,6 +312,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera_Controller.cs" />
     <Compile Include="Assets\Scripts\Player_Controller.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
