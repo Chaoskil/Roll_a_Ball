@@ -310,6 +310,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera_Controller.cs" />
     <Compile Include="Assets\Scripts\Player_Controller.cs" />
   </ItemGroup>
   <ItemGroup>
