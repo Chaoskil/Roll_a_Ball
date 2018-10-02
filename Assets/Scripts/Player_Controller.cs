@@ -11,6 +11,9 @@ public class Player_Controller : MonoBehaviour {
     [SerializeField]
     private Text countText;
 
+    [SerializeField]
+    private Text winText;
+
     private Rigidbody rb;
     private int Count;
 
@@ -19,6 +22,7 @@ public class Player_Controller : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         Count = 0;
         SetCountText();
+        winText.text = "";
     }
     private void FixedUpdate()
     {
@@ -43,5 +47,9 @@ public class Player_Controller : MonoBehaviour {
     private void SetCountText()
     {
         countText.text = "Count: " + Count.ToString();
+        if(Count >= 12)
+        {
+            winText.text = "You Win!";
+        }
     }
 }
